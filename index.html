@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+	<style>
+	*{
+    padding: 0%;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: arial;
+}
+body{
+    background-color: rgb(8, 4, 39);
+    color: white;
+}
+.navbar{
+    height: 75px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+ul li{
+    display: inline-block;
+    list-style: none;
+    margin-left: 15px;
+}
+ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+}
+ul li .btn{
+    height: 50px;
+    width: 120px;
+    background: black;
+    color: white;
+    border-radius: 25px;
+    border: none;
+    top: 11.5px;
+    font-size: 16px;
+}
+.btn-1{
+    height: 50px;
+    width: 120px;
+    background: black;
+    color: white;
+    border-radius: 25px;
+    z-index: 2;
+    border: none;
+    font-size: 16px;
+}
+.btn::after{
+    content: "";
+    position: absolute;
+    height: 55px;
+    width: 125px;
+    background: linear-gradient(45deg,RED,green,blue);
+    top: 10.5px;
+    right: 248px;
+    border-radius: 25px;
+    z-index: -1;
+}
+.btn-1::after{
+    content: "";
+    position: absolute;
+    height: 55px;
+    width: 125px;
+    background: linear-gradient(45deg,RED,green,blue);
+    top: 10.5px;
+    right: 108px;
+    border-radius: 25px;
+    z-index: -1;
+}
+.btn:hover{
+    background: crimson;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.btn-1:hover{
+    background: crimson;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+h1{
+    color: red;
+    cursor: pointer;
+}
+h1:hover{
+    color: green;
+    transition: 1S;
+}
+a{
+    color: red;
+    cursor: pointer;
+}
+a:hover{
+    color: green;
+    transition: 1S;
+}
+.active{
+    color: green;
+    transition: 1S;
+}
+	</style>
+</head>
+<body>
+    <div class="navbar">
+        <ul>
+            <div class="head">
+                <h1 class="heading">Portfolio</h1>
+            </div>
+        </ul>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">Product</a></li>
+            <li><a href="#">Projects</a></li>
+        </ul>
+        <ul>
+            <li><button class="btn">Sign-in</button></li>
+            <li><button class="btn-1">Log-in</button></li>
+        </ul>
+    </div>
+    <div class="art">
+        
+    </div>
+</body>
+</html>
